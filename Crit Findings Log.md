@@ -142,31 +142,23 @@ What if other nurse attends the alert? --> Alert Log
 • Horrible HMW, can edit away the word "Home"
 
 
-### Summarized feedback from Greg (Nov.16)
+### Summarized feedback from Greg Pass (Nov.16)
 
-Presentation Order:
-
-Samsung challenges us with this challenge "..."
-we discover this area aroud the elderly and we dive in ....
-(can be either in front or in the end)
-
-1. Catching punchline , make me care
-2. CHANGE:
-in the last few years, there are research show(what's missing)
-with iot..we can ...
-3.
-4.opportunities
-  put things in nursing home, -> address issue
-5.tangible:
-  product loop
-  (30s, one sentence each)
-  
- User Story:
- 1.person in nursing home (example: Jill entering the nursing home)
- 2.devices start collecting data(show a scenario)
- 3.dashboard
- 4.nurse receive a dashboard, looks at the log
-   (Bob opens the dashboard, he notices...)
- 5.alert sends to doctor (don't do feature walkthrough, tell the story)
- 6.patient take meditation and recover 
- 7.Vision (bigger picture, other scenarios, bigger market, eventually everyone will need service like this)
+Presentation Structure:
+- Either Opening with Samsung challenge or put in the end.<br />
+Samsung challenges us with this problem "..."<br />
+We discovered this area aroud the elderly and we dived in ....<br />
+- Overview:30s in total, one sentence each
+   - 1. Catching punchline , make me care
+   - 2. in the last few years, there are research show(what's missing) 
+   - 3. Change: with IOT..we can ...
+   - 4. Opportunities: put things in nursing home(address issue), we can (solve the problem)
+   - 5. Make it tangible: product loop
+- User Story:
+   - 1. person in nursing home (example: Jill entering the nursing home)
+   - 2. devices start collecting data(show a scenario)
+   - 3. nurse receive a dashboard, looks at the log<br />
+     (Bob opens the dashboard, he notices...)
+   - 4. alert sends to doctor (don't do feature walkthrough, tell the story)
+   - 5. patient take meditation and recover 
+   - 6. Vision (bigger picture, other scenarios, bigger market, eventually everyone will need service like this)
