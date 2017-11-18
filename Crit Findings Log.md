@@ -28,7 +28,7 @@
   2)	Reach for doctors to confirm technical/clinical relevance of information
   3)	Reach for possible final clients to evaluate possible aversion to data collection
 
-### Summarized feedback from Product Studio Alumni
+### Summarized feedback from (Sprint 2) Product Studio Alumni
 
 ### Style
 Too much text. You will lose more and more of your audience the more text you use. It feels visually monotone. It's better to just use captivating visuals and your voice. If you have to use text on a slide, keep it to one sentence - or key words - that you are really trying to drive home. 
@@ -162,3 +162,14 @@ We discovered this area aroud the elderly and we dived in ....<br />
    - 4. alert sends to doctor (don't do feature walkthrough, tell the story)
    - 5. patient take meditation and recover 
    - 6. Vision (bigger picture, other scenarios, bigger market, eventually everyone will need service like this)
+   
+### Summarized feedback from (Sprint 3) Chris, Anna, Deborah and Arnaud (Nov.16)
+
+#### Deborah:
+"What did you build?" – we needed to include a Demo of some sort
+#### Anna & Chris:
+Clear narrative but, in terms of product idea, have concerns about privacy
+#### Arnaud: 
+Questioning the product idea in terms of whether Smart Home is the way to go or wearable devices (e.g. Apple Watch or Fitbit)
+#### Cards: 
+
