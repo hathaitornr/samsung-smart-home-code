@@ -163,7 +163,7 @@ We discovered this area aroud the elderly and we dived in ....<br />
    - 5. patient take meditation and recover 
    - 6. Vision (bigger picture, other scenarios, bigger market, eventually everyone will need service like this)
    
-### Summarized feedback from (Sprint 3) Chris, Anna, Deborah and Arnaud (Nov.16)
+### Summarized feedback from (Sprint 3) Chris, Anna, Deborah and Arnaud (Nov.17)
 
 #### Deborah:
 "What did you build?" – we needed to include a Demo of some sort
@@ -172,4 +172,14 @@ Clear narrative but, in terms of product idea, have concerns about privacy
 #### Arnaud: 
 Questioning the product idea in terms of whether Smart Home is the way to go or wearable devices (e.g. Apple Watch or Fitbit)
 #### Cards: 
+- Pros:
+  - Good slides, presentation, and demo
+  - Nice data visualizations
+
+- Cons:
+  - "What sensors are you using? How do they monitor these things" 
+  - "Not sure how much of the product was actually built"
+  - "Do relatvies have access to this inforamtion? If not, why?"
+  
+
 
