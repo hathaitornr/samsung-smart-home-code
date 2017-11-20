@@ -30,7 +30,7 @@
 
 ### Summarized feedback from (Sprint 2) Product Studio Alumni
 
-### Style
+#### Style
 Too much text. You will lose more and more of your audience the more text you use. It feels visually monotone. It's better to just use captivating visuals and your voice. If you have to use text on a slide, keep it to one sentence - or key words - that you are really trying to drive home. 
 
 Remember - make the audience care about the problem, convince me of your epiphany/wedge and then convince me how every part of your solution solves the problem. 
@@ -40,7 +40,7 @@ Your wedge about why you chose retirement homes was weak(it's a place where peop
 Your demo was very confusing. You showed an interface and then a video and they didn't seem connected. You didn't fully convince me that your solution solved the problem -- not the question you were given, or the question you invented (How might we make nursing homes more safe and secure with smart home technology?) You just showed us what would happen but didn't talk about the benefits...aka why this is better than existing processes. 
 
 
-### Your Idea
+#### Your Idea
 Your solution doesn't answer the question. "How might we increase customer's understanding of how to use and take advantage of the smart home?"
 
 It doesn't help the general public understand smart homes better...as most people have never been to a retirement home. And the needs of people in retirement homes are different from those of normal people. Aka, as a young healthy woman, I'm not worried about detecting an impending illness or a fall. Your solution doesn't help the average person understand how smart homes will help them.
@@ -163,7 +163,7 @@ We discovered this area aroud the elderly and we dived in ....<br />
    - 5. patient take meditation and recover 
    - 6. Vision (bigger picture, other scenarios, bigger market, eventually everyone will need service like this)
    
-### Summarized feedback from (Sprint 3) Chris, Anna, Deborah and Arnaud (Nov.17)
+### Summarized feedback from (Sprint 3) Chris, Anna, Deborah, Arnaud and the crowd
 
 #### Deborah:
 "What did you build?" – we needed to include a Demo of some sort
