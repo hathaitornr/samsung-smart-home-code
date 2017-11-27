@@ -3,6 +3,32 @@
 ### Product Challenge: How might we increase consumers’ understanding of how to use and take advantage of a Smart Home? 
 #### Product Narrative: Assist the elderly in early detection of health issues, by creating a system using Smart Home tech within Nursing Homes, that monitors their basic routine activity
 
+## Week 13 (11/26/2017)
+### Week Behind
+ - Final meetings with advisor Greg Pass about ways to further improve our presentation and nail all components of the grading criteria
+ - Made final edits to the presentation, filling in any missing info and clarifying confusions that arose during Sprint 3 as well as working on showcasing a live working demo
+ - Attempted to use a third party device to show a working demo for the final presentation given the technical restrictions from the Samsung devices we have (which we originally used within our prototype)
+ - Further improved visual of the frontend
+
+### Week Ahead
+ - Set up a schedule to present you our final!
+ 
+### Risk
+ - Live demo might not work out and we have to resort to recording the demo instead
+
+## Week 12 (11/19/2017)
+### Week Behind
+ - Sprint 3; Most importantly, we nailed our narrative
+ - Managed to have a working system (backend and frontend working in harmony)
+
+### Week Ahead
+ - Fix and perfect the visual on the frontend
+ - Attempt to have a live demo for our final presentation to clear the misconception that our prototype has no backend
+ - Set up a time with you to present you our product!
+ 
+### Risk
+ - Live demo in person might fail which would affect the quality of our presentation
+
 ## Week 11 (11/12/2017)
 ### Week Behind
  - Explored possible solutions in inserting responsive chart in frontend dashboard
