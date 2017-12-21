@@ -1,0 +1,1979 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jose Smith</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+          page. However, you can choose any other skin. Make sure you
+          apply the skin class to the body tag so the changes take effect. -->
+    <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <style>
+      .skin-blue .sidebar-menu>li.active>a {
+        border-left-color: white !important;
+        background-color: #001B66 !important;
+      }
+
+      .header {
+        background-color: #5968B3 !important;
+        color: white !important;
+      }
+
+      .skin-blue .sidebar-form input[type="text"],
+      .btn {
+        border-radius: 0px;
+        border: 0px;
+        background-color: #5A69AE !important;
+        color: white !important;
+      }
+
+      .skin-blue .sidebar-form {
+        border: 0px solid #374850;
+        color: white !important;
+      }
+
+      .box-body {
+        box-shadow: 0px 2px 4px #DEDEDE;
+      }
+
+      .namecolor {
+        color: white;
+      }
+
+      .btncolor2 {
+        background-color: #7184D9;
+
+      }
+
+      .btncolor {
+        background-color: #5968B3;
+      }
+
+
+      .alert-toilet {
+        outline-width: 3px;
+        outline-color: red;
+        outline-style: solid;
+        outline-offset: 3px;
+        border-radius: 4px;
+
+      }
+
+      .info-box-icon {
+        background: none !important;
+      }
+
+      .info-box-number {
+        margin-top: 0.5em;
+        margin-left: 1.5em;
+        font-size: 15pt;
+      }
+
+
+      .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+      }
+
+      #Daily {
+        display: block;
+      }
+
+      .tabcontent2 {
+        display: block;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .h1,
+      .h2,
+      .h3,
+      .h4,
+      .h5,
+      .h6,
+      body {
+        font-family: "Circular Std";
+        color: #001B66;
+      }
+
+      .profile-user-img {
+        border: 3px solid #021D62;
+      }
+    </style>
+
+  </head>
+
+
+
+  <body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+
+      <!-- Main Header -->
+      <header class="main-header">
+
+        <!-- Logo -->
+        <a href="starter.html" class="logo">
+          <!-- mini logo for sidebar mini 50x50 pixels -->
+          <span class="logo-mini"><img src="Logo-small.png" alt="Logo-small" height="auto" width="26"></span>
+          <!-- logo for regular state and mobile devices -->
+          <span class="logo-lg"><img src="Logo.png" alt="Logo" height="auto" width="80"></span>
+        </a>
+
+        <!-- Header Navbar -->
+        <nav class="navbar navbar-static-top" role="navigation">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <span class="sr-only">Toggle navigation</span>
+            </a>
+          <!-- Navbar Right Menu -->
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+              <!-- Messages: style can be found in dropdown.less-->
+              <!-- <li class="dropdown messages-menu"> -->
+              <!-- Menu toggle button -->
+              <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="label label-success">4</span>
+                        </a> -->
+              <ul class="dropdown-menu">
+                <!-- <li class="header">You have 4 messages</li> -->
+                <li>
+                  <!-- inner menu: contains the messages -->
+                  <ul class="menu">
+                    <li>
+                      <!-- start message -->
+                      <a href="#">
+                        <div class="pull-left">
+                          <!-- User Image -->
+                          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        </div>
+                        <!-- Message title and timestamp -->
+                        <h4>
+                                                Support Team
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h4>
+                        <!-- The message -->
+                        <p>Hi Maria!
+                          <3</p>
+                      </a>
+                    </li>
+                    <!-- end message -->
+                  </ul>
+                  <!-- /.menu -->
+                </li>
+                <li class="footer"><a href="#">See All Messages</a></li>
+              </ul>
+              </li>
+              <!-- /.messages-menu -->
+
+              <!-- Notifications Menu -->
+              <!-- <li class="dropdown notifications-menu"> -->
+              <!-- Menu toggle button -->
+              <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-bell-o"></i>
+                            <span class="label label-warning">10</span>
+                        </a> -->
+              <ul class="dropdown-menu">
+                <li class="header">You have 10 notifications</li>
+                <li>
+                  <!-- Inner Menu: contains the notifications -->
+
+                </li>
+                <li class="footer"><a href="#">View all</a></li>
+              </ul>
+              </li>
+              <!-- Tasks Menu -->
+              <!-- <li class="dropdown tasks-menu"> -->
+              <!-- Menu Toggle Button -->
+              <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-flag-o"></i>
+                            <span class="label label-danger">9</span>
+                        </a> -->
+              <ul class="dropdown-menu">
+                <li class="header">You have 9 tasks</li>
+                <li>
+                  <!-- Inner menu: contains the tasks -->
+                  <ul class="menu">
+                    <li>
+                      <!-- Task item -->
+                      <a href="#">
+                        <!-- Task title and progress text -->
+                        <h3>
+                                                Design some buttons
+                                                <small class="pull-right">20%</small>
+                                            </h3>
+                        <!-- The progress bar -->
+                        <div class="progress xs">
+                          <!-- Change the css width attribute to simulate progress -->
+                          <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                            <span class="sr-only">20% Complete</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- end task item -->
+                  </ul>
+                </li>
+                <li class="footer">
+                  <a href="#">View all tasks</a>
+                </li>
+              </ul>
+              </li>
+              <!-- User Account Menu -->
+              <li class="dropdown user user-menu">
+                <!-- Menu Toggle Button -->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <!-- The user image in the navbar-->
+                  <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                  <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                  <span class="hidden-xs">Maria Bravo</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- The user image in the menu -->
+                  <li class="user-header">
+                    <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                    <p>
+                    </p>
+                  </li>
+                  <!-- Menu Body -->
+                  <li class="user-body">
+                    <div class="row">
+                      <div class="col-xs-4 text-center">
+                        <a href="#">Followers</a>
+                      </div>
+                      <div class="col-xs-4 text-center">
+                        <a href="#">Sales</a>
+                      </div>
+                      <div class="col-xs-4 text-center">
+                        <a href="#">Friends</a>
+                      </div>
+                    </div>
+                    <!-- /.row -->
+                  </li>
+                  <!-- Menu Footer-->
+                  <li class="user-footer">
+                    <div class="pull-left">
+                      <a href="#" class="btn btn-default btn-flat">Profile</a>
+                    </div>
+                    <div class="pull-right">
+                      <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- Control Sidebar Toggle Button -->
+              <li>
+                <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar btncolor2">
+
+          <!-- Sidebar user panel (optional) -->
+          <div class="user-panel">
+            <div class="pull-left image">
+              <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+              <p>Maria Bravo</p>
+              <!-- Status -->
+              <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+            </div>
+          </div>
+
+          <!-- search form (Optional) -->
+          <form action="#" method="get" class="sidebar-form">
+            <div class="input-group">
+              <input type="text" name="q" class="form-control" placeholder="Search...">
+              <span class="input-group-btn">
+              <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+              </button>
+            </span>
+            </div>
+          </form>
+          <!-- /.search form -->
+
+          <!-- Sidebar Menu -->
+          <ul class="sidebar-menu" data-widget="tree">
+            <li class="header">Residents</li>
+            <!-- Optionally, you can add icons to the links -->
+            <li class="active"><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Jose Smith</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Emily Jonhson</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Andrew Williams</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Jane Doe</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Frank Moore</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Lily Huang</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Rachel Bloom</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Tanya Johnson</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Morris Wilson</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Mike Ronson</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Jake Goldberg</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Justin Wexler</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Ronnie Lin</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Quincy Larson</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Queenie Rix</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Elijah Navaratte</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Pia Marcus</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Margaret Dupont</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Julian Goyette</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Rocky Core</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Leida Salido</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Elmer Demaris</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Federic McCormick</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Dante Glaude</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Candy Dupras</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Chantelle Bradel</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Tayshawn Jayce</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Stacey Livers</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Sammy Wooster</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Janeen Ritz</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Louise Lemke</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Carroll Poston</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Domenic Bolger</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Jaime Line</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Rosina Geers</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Sima Arras</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Devin Allain</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">China Large</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Thuy Signor</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Angeline Langham</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Vania Barratt</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Frank Mirror</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span class="namecolor">Heyley Huang</span></a></li>
+          </ul>
+          <!-- /.sidebar-menu -->
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>
+                Jose Smith
+
+            </h1>
+        </section>
+
+        <!-- Main content -->
+        <section class="content container-fluid">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="box ">
+                <div class="box-body box-profile">
+                  <div class="box-header with-border">
+                    <img class="profile-user-img img-circle center-block" src="defaultJose.png" alt="User profile picture">
+
+                    <h3 class="profile-username text-center"></h3>
+                  </div>
+
+                  <div class="">
+                    <h4> Date of Birth</h4>
+                    <p class="text-muted">02/18/1933</p>
+                    <hr>
+
+                    <h4> Insurance</h4>
+                    <p class="text-muted">Oscar Health</p>
+                    <hr>
+                    <h4> Contact</h4>
+                    <p class="text-muted">912-290-6158</p>
+                    <hr>
+                    <h4> Remarks</h4>
+                    <p class="text-muted">11/13/17 &nbsp Bathroom Alert</p>
+                    <p class="text-muted">11/15/17 &nbsp Bathroom Alert</p>
+                    <p class="new text-muted"></p>
+
+                    <hr>
+                    <button type="button" class="btn btn-primary pull-right dropdown-toggle btncolor" data-toggle="collapse" data-target="#remark"> Edit Remarks
+                                </button>
+
+                    <button type="button" class="btn btn-primary pull-right dropdown-toggle btncolor" style="margin-right: 5px;" data-toggle="collapse" data-target="#doctor">
+                                    Contact Doctor</button>
+
+                    <div id="doctor" class="collapse">
+                      <p>&nbsp</p>
+                      <p>&nbsp</p>
+                      <form role="form">
+                        <div class="box-body">
+                          <div class="form-group">
+                            <input class="form-control" placeholder="To:">
+                          </div>
+                          <div class="form-group">
+                            <input class="form-control" placeholder="Subject:">
+                          </div>
+                          <div class="form-group">
+                            <textarea class="form-control" style="height: 100px">
+                                                </textarea>
+                          </div>
+                          <div class="form-group">
+                            <div class="btn btn-default btn-file">
+                              <i class="fa fa-paperclip"></i> Attachment
+                              <input type="file" name="attachment">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-footer">
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                      </form>
+                    </div>
+                    <div id="remark" class="collapse">
+                      <p>&nbsp</p>
+                      <p>&nbsp</p>
+                      <form role="form">
+                        <div class="box-body">
+                          <div class="form-group">
+                            <label for="notes">Remark:</label>
+                            <textarea class="form-control" rows="5" id="notes"></textarea>
+                          </div>
+                        </div>
+                        <div class="box-footer">
+                          <button class="btn btn-primary" id="save-remark" type="button">Submit</button>
+                        </div>
+                      </form>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="col-md-9">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="box box-solid  alert-toilet">
+                    <div class="box-header with-border bg-gray">
+                      <h3 class="box-title">Toileting</h3>
+                      <!-- /.box-tools -->
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+
+                      <img src="toileting.png" alt="Smiley face" class="info-box-icon" height="42" width="42">
+                      <div class="info-box-content">
+                        <span class="info-box-number">Average of </br> 12 times/day</span>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="box box-solid">
+                    <div class="box-header with-border bg-gray">
+                      <h3 class="box-title">Sleeping</h3>
+                      <!-- /.box-tools -->
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                      <img src="sleeping.png" alt="Smiley face" class="info-box-icon" height="42" width="42">
+                      <div class="info-box-content">
+                        <span class="info-box-number">Average of </br> 8 hours/day</span>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="box box-solid">
+                    <div class="box-header with-border bg-gray">
+                      <h3 class="box-title">Transferring</h3>
+                      <!-- /.box-tools -->
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                      <img src="transferring.png" alt="Smiley face" class="info-box-icon" height="42" width="42">
+                      <div class="info-box-content">
+                        <span class="info-box-number">Average of </br> 5000 steps/day</span>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="box box-solid">
+                    <div class="box-header with-border bg-gray">
+                      <h3 class="box-title">Eating</h3>
+                      <!-- /.box-tools -->
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                      <img src="eating.png" alt="Smiley face" class="info-box-icon" height="42" width="42">
+                      <div class="info-box-content">
+                        <span class="info-box-number">Mostly finishes</span>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="box">
+                    <div class="box-header with-border">
+                      <h3 class="box-title">General Space Presence</h3>
+
+                      <div class="box-tools pull-right">
+                      </div>
+                    </div>
+                    <div class="box-body">
+                      <div class="chart">
+                        <canvas id="general2" width="100" height="20"></canvas>
+                      </div>
+                      <!-- /.box-body -->
+                    </div>
+                    <!-- /.box -->
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="box alert-toilet">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Toileting</h3>
+
+                  <div class="tab pull-right">
+                    <button class="tab-links" onclick="openBath(event, 'Daily')">Daily</button>
+                    <button class="tab-links" onclick="openBath(event, 'Weekly')">Weekly</button>
+                    <button class="tab-links" onclick="openBath(event, 'Monthly')">Monthly</button>
+                  </div>
+
+                </div>
+
+                <div class="box-body">
+                  <div class="chart tabcontent" id="Daily">
+                    <canvas id="daily-chart" width="100" height="25"></canvas>
+                  </div>
+                  <div class="chart tabcontent" id="Weekly">
+                    <canvas id="weekly-chart" width="100" height="25"></canvas>
+                  </div>
+                  <div class="chart tabcontent" id="Monthly">
+                    <canvas id="monthly-chart" width="100" height="25"></canvas>
+                  </div>
+                </div>
+                <!-- /.box -->
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="box ">
+
+                <div class="box-header with-border">
+                  <h3 class="box-title">Sleeping</h3>
+                  <div class="box-tools pull-right">
+                  </div>
+                </div>
+
+                <div class="box-body">
+                  <div class="col-md-4">
+                    <div class="chart">
+                      <canvas id="sleeping1" width="50" height="35"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="chart">
+                      <canvas id="sleeping2" width="100" height="35"></canvas>
+                    </div>
+                  </div>
+                  <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="box">
+
+                <div class="box-header with-border">
+                  <h3 class="box-title">Transferring (Steps)</h3>
+                  <div class="box-tools pull-right">
+
+                  </div>
+                </div>
+
+                <div class="box-body">
+                  <div class="row">
+                    <div class="text-center">
+
+                      <input type="text" class="knob" value="7990" data-skin="tron" data-thickness="0.2" data-angleArc="250" data-angleOffset="-125" data-width="180" data-height="180" data-fgColor="#3c8dbc" data-min="0" data-max="9000" data-readonly="true">
+
+                      <div class="knob-label">STEPS</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.box -->
+              </div>
+            </div>
+
+
+
+            <div class="col-md-8">
+              <div class="box">
+                <!-- header -->
+                <div class="box-header with-border">
+                  <h3 class="box-title">Transferring (Overview)</h3>
+                  <div class="box-tools pull-right"></div>
+                </div>
+                <!-- actual box -->
+                <div class="box-body">
+                  <div class="col-md-0">
+                    <div class="chart">
+                      <canvas id="transferringoverview" width="50" height="12"></canvas>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- /.box -->
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="box">
+                <div class="box-header with-border ">
+                  <h3 class="box-title">Eating</h3>
+
+                  <div class="box-tools pull-right">
+                  </div>
+                </div>
+
+                <div class="box-body">
+                  <div class="row">
+                    <!-- <canvas id="eating" width="100%" height="0"></canvas> -->
+                    <div class="col-xs-6 col-md-4 text-center marginontop">
+                      <input type="text" class="knob" value="80" data-width="150" data-height="150" data-fgColor="#50C6DF" data-readonly="true">
+
+                      <div class="knob-label">DINNER (%)</div>
+                    </div>
+
+                    <div class="col-xs-6 col-md-4 text-center marginontop">
+                      <input type="text" class="knob" value="95" data-width="150" data-height="150" data-fgColor="#5294C8" data-readonly="true">
+
+                      <div class="knob-label">LUNCH (%)</div>
+                    </div>
+
+                    <div class="col-xs-6 col-md-4 text-center marginontop">
+                      <input type="text" class="knob" value="80" data-width="150" data-height="150" data-fgColor="#507ADF" data-readonly="true">
+
+                      <div class="knob-label">BREAKFAST (%)</div>
+                    </div>
+
+
+
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    </section>
+    <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Main Footer -->
+    <!-- <footer class="main-footer">
+
+      <div class="pull-right hidden-xs">
+
+      </div>
+
+      <strong>Copyright &copy; 2016 <a href="#">Company</a>.</strong> All rights reserved.
+    </footer> -->
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Create the tabs -->
+      <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+        <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+        <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <!-- Home tab content -->
+        <div class="tab-pane active" id="control-sidebar-home-tab">
+          <h3 class="control-sidebar-heading">Recent Activity</h3>
+          <ul class="control-sidebar-menu">
+            <li>
+              <a href="javascript:;">
+                            <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+                            <div class="menu-info">
+                                <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+
+                                <p>Will be 23 on April 24th</p>
+                            </div>
+                        </a>
+            </li>
+          </ul>
+          <!-- /.control-sidebar-menu -->
+
+          <h3 class="control-sidebar-heading">Tasks Progress</h3>
+          <ul class="control-sidebar-menu">
+            <li>
+              <a href="javascript:;">
+                <h4 class="control-sidebar-subheading">
+                                Custom Template Design
+                                <span class="pull-right-container">
+                    <span class="label label-danger pull-right">70%</span>
+                  </span>
+                            </h4>
+
+                <div class="progress progress-xxs">
+                  <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-- /.control-sidebar-menu -->
+
+        </div>
+        <!-- /.tab-pane -->
+        <!-- Stats tab content -->
+        <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+        <!-- /.tab-pane -->
+        <!-- Settings tab content -->
+        <div class="tab-pane" id="control-sidebar-settings-tab">
+          <form method="post">
+            <h3 class="control-sidebar-heading">General Settings</h3>
+
+            <div class="form-group">
+              <label class="control-sidebar-subheading">
+                            Report panel usage
+                            <input type="checkbox" class="pull-right" checked>
+                        </label>
+
+              <p>
+                Some information about this general settings option
+              </p>
+            </div>
+            <!-- /.form-group -->
+          </form>
+        </div>
+        <!-- /.tab-pane -->
+      </div>
+    </aside>
+    <!-- /.control-sidebar -->
+    <!-- Add the sidebar's background. This div must be placed
+    immediately after the control sidebar -->
+    <div class="control-sidebar-bg"></div>
+    </div>
+    <!-- ./wrapper -->
+
+
+
+
+
+
+   
+<!-- REQUIRED JS SCRIPTS -->
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+
+<script defer src="/__/firebase/4.6.2/firebase-auth.js"></script>
+<script defer src="/__/firebase/4.6.2/firebase-database.js"></script>
+<script defer src="/__/firebase/4.6.2/firebase-messaging.js"></script>
+<script defer src="/__/firebase/4.6.2/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-messaging.js"></script>
+<!-- jQuery 3 -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- jQuery Knob-->
+<script src="bower_components/jquery-knob/js/jquery.knob.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script>
+
+
+
+<script>
+
+// Initialize Firebase
+/*var config = {
+
+    FIREBASE CONFIG HERE
+    
+  };
+  firebase.initializeApp(config);
+    var childData
+    var BATH = [];
+    var liveData = [];
+    var leadsRef = firebase.database().ref('BathroomVisit');
+    leadsRef.on('value', function(snapshot) {
+        var data = snapshot.val();
+  		for (var key in data) {
+    		if (data.hasOwnProperty(key)) {
+      			BATH.push(data[key].DateTime)
+    };
+  }
+      
+    });
+    console.log(BATH);
+
+    console.log(BATH.length);
+    
+
+    function loadFirebaseArray(path) {
+        return firebase.database().ref(path).once('value').then(snap => snap.val());
+      }
+
+      function toArray(items) {
+        return Object.keys(items).reduce((array, key) => {
+          const value = items[key];
+          array.push({key, value});
+          liveData.push({key, value});
+          return array;
+        }, []).sort();
+      }
+
+      loadFirebaseArray('BathroomVisit').then(liveData => {
+        //console.log('items', items);
+        //liveData = items.slice(0);
+
+        const asArray = toArray(liveData);
+
+        const justTheValues = asArray.map(x => x.value).sort();
+      
+      });
+
+
+
+
+    var currentdate = new Date(); 
+    var datetime = currentdate.getFullYear() + "/"
+                + (currentdate.getMonth()+1)  + "/" 
+                + currentdate.getDate() + " "; 
+    
+    console.log(datetime);
+    current_time = currentdate.toLocaleString('en-US', { hour: 'numeric',minute:'numeric', hour12: true });
+    console.log(current_time)
+
+
+
+	var listOfvisits = [''];
+
+	BATH.forEach(function(entry) {
+
+		//changedDate = string.splice;
+		//singleObj['DateTime'] = entry.datetime;
+		//singleObj['Time'] = entry.time;
+		//listOfvisits.push(singleObj);
+	});
+*/
+    
+
+	var arr = [], i, j;
+	for(i=0; i<24; i++) {
+  		for(j=0; j<4; j++) {
+    		arr.push(i + ":" + (j===0 ? "00" : 15*j) );
+  		}
+	}
+	
+	var date = new Date(),
+    h = date.getHours(),
+    m = 15 * Math.floor(date.getMinutes()/15),
+    stamp = h + ":" + (m === 0 ? "00" : m);
+
+    var pos = arr.indexOf(stamp),
+    timelist = arr.slice(pos).concat(arr.slice(0,pos));
+
+    console.log(timelist);
+    newdata = [];
+
+    var timeLength = timelist.length;
+    console.log(timeLength)
+
+
+
+/*    for (var i = 0; i < timeLength; i++) {
+      j=0;
+      if (livedata[j] == timelist[i]){
+        newdata.push(1);
+        j++;
+      } 
+      else{
+        newdata.push(null);
+      }*/
+      
+
+
+
+
+    for (var i = 0; i < timeLength; i++) {
+    	if (i ==39|| i == 43 || i == 69 || i == 69){
+    		newdata.push(1);
+    	} 
+    	else{
+    		newdata.push(null);
+    	}
+    	
+	}
+
+
+
+   	
+
+      $(function() {
+        /* jQueryKnob */
+
+        $(".knob").knob({
+          /*change : function (value) {
+           //console.log("change : " + value);
+           },
+           release : function (value) {
+           console.log("release : " + value);
+           },
+           cancel : function () {
+           console.log("cancel : " + this.value);
+           },*/
+          draw: function() {
+
+            // "tron" case
+            if (this.$.data('skin') == 'tron') {
+
+              var a = this.angle(this.cv) // Angle
+                ,
+                sa = this.startAngle // Previous start angle
+                ,
+                sat = this.startAngle // Start angle
+                ,
+                ea // Previous end angle
+                , eat = sat + a // End angle
+                ,
+                r = true;
+
+              this.g.lineWidth = this.lineWidth;
+
+              this.o.cursor &&
+                (sat = eat - 0.3) &&
+                (eat = eat + 0.3);
+
+              if (this.o.displayPrevious) {
+                ea = this.startAngle + this.angle(this.value);
+                this.o.cursor &&
+                  (sa = ea - 0.3) &&
+                  (ea = ea + 0.3);
+                this.g.beginPath();
+                this.g.strokeStyle = this.previousColor;
+                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sa, ea, false);
+                this.g.stroke();
+              }
+
+              this.g.beginPath();
+              this.g.strokeStyle = r ? this.o.fgColor : this.fgColor;
+              this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sat, eat, false);
+              this.g.stroke();
+
+              this.g.lineWidth = 2;
+              this.g.beginPath();
+              this.g.strokeStyle = this.o.fgColor;
+              this.g.arc(this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
+              this.g.stroke();
+
+              return false;
+            }
+          }
+        });
+
+
+      });
+    </script>
+
+
+    <script>
+      new Chart(document.getElementById("general2"), {
+        type: 'bar',
+        data: {
+          labels: ['12 - 4 AM', '4 - 8 AM', '8 - 12 PM', '12 - 4 PM', '4 - 8 PM', '8 - 12 PM'],
+          datasets: [{
+            label: "Living Room",
+              borderColor:"#3e95cd",
+            backgroundColor: "#3e95cd",
+            data: [0, 0, 70, 85, 70, 5]
+          }, {
+            label: "Bedroom",
+            backgroundColor: "#8e5ea2",
+              borderColor:"#8e5ea2",
+            data: [90, 95, 5, 0, 0, 90]
+          }, {
+            label: "Bathroom",
+              borderColor:"#F8BBD0",
+            backgroundColor: "#F8BBD0",
+            data: [10, 5, 10, 10, 10, 5]
+
+          }, {
+            label: "Kitchen",
+              borderColor:"#4DD0E1",
+            backgroundColor: "#4DD0E1",
+            data: [0, 0, 15, 5, 20, 0]
+          }]
+        },
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                callback: function(label, index, labels) {
+                  return label + ' %';
+                }
+              }
+            }],
+          }
+
+        }
+      });
+
+
+      new Chart(document.getElementById("daily-chart"), {
+        type: 'line',
+        data: {
+          labels: timelist,
+          datasets: [{
+              label: "Today",
+              borderColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              pointRadius: "6",
+              data: newdata,
+            }
+
+          ]
+        },
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                display: false
+              },
+              gridLines: {
+                display: false
+              }
+            }]
+          },
+          legend: {
+            display: false
+          }
+        }
+      });
+
+      new Chart(document.getElementById("weekly-chart"), {
+        type: 'line',
+        data: {
+          labels: [" 12:00 AM", " 12:10 AM", " 12:20 AM", " 12:30 AM", " 12:40 AM", " 12:50 AM", " 1:00 AM", " 1:10 AM", " 1:20 AM", " 1:30 AM", " 1:40 AM", " 1:50 AM", " 2:00 AM", " 2:10 AM", " 2:20 AM", " 2:30 AM", " 2:40 AM", " 2:50 AM",
+            " 3:00 AM", " 3:10 AM", " 3:20 AM", " 3:30 AM", " 3:40 AM", " 3:50 AM", " 4:00 AM", " 4:10 AM", " 4:20 AM", " 4:30 AM", " 4:40 AM", " 4:50 AM", " 5:00 AM", " 5:10 AM", " 5:20 AM", " 5:30 AM", " 5:40 AM", " 5:50 AM", " 6:00 AM",
+            " 6:10 AM", " 6:20 AM", " 6:30 AM", " 6:40 AM", " 6:50 AM", " 7:00 AM", " 7:10 AM", " 7:20 AM", " 7:30 AM", " 7:40 AM", " 7:50 AM", " 8:00 AM", " 8:10 AM", " 8:20 AM", " 8:30 AM", " 8:40 AM", " 8:50 AM", " 9:00 AM", " 9:10 AM",
+            " 9:20 AM", " 9:30 AM", " 9:40 AM", " 9:50 AM", " 10:00 AM", " 10:10 AM", " 10:20 AM", " 10:30 AM", " 10:40 AM", " 10:50 AM", " 11:00 AM", " 11:10 AM", " 11:20 AM", " 11:30 AM", " 11:40 AM", " 11:50 AM", " 12:00 PM", " 12:10 PM",
+            " 12:20 PM", " 12:30 PM", " 12:40 PM", " 12:50 PM", " 1:00 PM", " 1:10 PM", " 1:20 PM", " 1:30 PM", " 1:40 PM", " 1:50 PM", " 2:00 PM", " 2:10 PM", " 2:20 PM", " 2:30 PM", " 2:40 PM", " 2:50 PM", " 3:00 PM", " 3:10 PM", " 3:20 PM",
+            " 3:30 PM", " 3:40 PM", " 3:50 PM", " 4:00 PM", " 4:10 PM", " 4:20 PM", " 4:30 PM", " 4:40 PM", " 4:50 PM", " 5:00 PM", " 5:10 PM", " 5:20 PM", " 5:30 PM", " 5:40 PM", " 5:50 PM", " 6:00 PM", " 6:10 PM", " 6:20 PM", " 6:30 PM",
+            " 6:40 PM", " 6:50 PM", " 7:00 PM", " 7:10 PM", " 7:20 PM", " 7:30 PM", " 7:40 PM", " 7:50 PM", " 8:00 PM", " 8:10 PM", " 8:20 PM", " 8:30 PM", " 8:40 PM", " 8:50 PM", " 9:00 PM", " 9:10 PM", " 9:20 PM", " 9:30 PM", " 9:40 PM",
+            " 9:50 PM", " 10:00 PM", " 10:10 PM", " 10:20 PM", " 10:30 PM", " 10:40 PM", " 10:50 PM", " 11:00 PM", " 11:10 PM", " 11:20 PM", " 11:30 PM", " 11:40 PM", " 11:50 PM"
+          ],
+          datasets: [{
+              label: "1/3",
+              borderColor: "#4DD5C8",
+              backgroundColor: "#4DD5C8",
+              pointBackgroundColor: "#4DD5C8",
+              pointRadius: "4",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, 1, null, null, null, null, null, null, null, null, null, 1, null, 1, null, 1, null, null, 1, null, null, null, null, null, 1, null, null, null, null, null, null, 1, null, null, null, null,
+                null, null, null, null, null, null, 1, null, null, null, null, null, null, null, null, null, null, null, 1, null, null, null, null, null, 1, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, 1, null, 1, null, 1, null, 1, null, 1, null, 1, null, null, null
+              ]
+            },
+            {
+              label: "1/4",
+              borderColor: "#4DD5C8",
+              backgroundColor: "#4DD5C8",
+              pointBackgroundColor: "#4DD5C8",
+              pointRadius: "4",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, 2, null, null, null, null, null, 2, null, 2, null, null, null, 2, null, 2, null, 2, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 2, null, 2, null, null, null, null, null, null, null, null, null, 2, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 2, null, null, null, null, null, 2, null, null, null, null, null
+              ]
+            },
+            {
+              label: "1/5",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              pointRadius: "4",
+              data: [3, null, 3, null, 3, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, 3, null, 3, null, null, null, 3, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 3, null, null, null, null, null, null, 3, null, null, null, null, 3,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 3, null, null, null, 3, null, 3, null, 3, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, 3, null, null, null, null, null, null, null, null, null, null, 3, null, 3, null, 3, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "1/6",
+              borderColor: "#507BDF",
+              backgroundColor: "#507BDF",
+              pointBackgroundColor: "#507BDF",
+              pointRadius: "4",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 4, null, null, null, null, null, null, 4, null, 4, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, 4, null, null, null, null, 4, null, null, null, null, 4, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, 4, null, null, null, null, null, 4, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 4, null, null, null, null, null, null,
+                4, null, null, 4, null, 4, null, 4, null, null, 4, null, null, null, null, null, null, null, 4, null, null, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "1/7",
+              borderColor: "#4D51D5",
+              backgroundColor: "#4D51D5",
+              pointBackgroundColor: "#4D51D5",
+              pointRadius: "4",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, 5, null, null, null, null, 5, null, 5, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 5, null, null, null, null, null, null, null, null, null, null, null, 5, null, null, null, null, 5, null,
+                5, null, null, null, null, null, null, null, null, null, null, 5, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "1/8",
+              borderColor: "#7149EC",
+              backgroundColor: "#7149EC",
+              pointBackgroundColor: "#7149EC",
+              pointRadius: "4",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 6, null, 6, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 6, null, 6, null,
+                null, null, null, null, 6, null, 6, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 6, null, null, null, null, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "1/9",
+              borderColor: "#9747E2",
+              backgroundColor: "#9747E2",
+              pointBackgroundColor: "#9747E2",
+              pointRadius: "4",
+              data: [7, null, null, null, null, null, null, null, null, 7, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 7, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, 7, null, 7, null, null, null, null, null, null, null, null, null, null, 7, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 7, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 7,
+                null, null, null, null, null, null, null, null, 7, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 7, null, null, null, null, 7
+              ]
+            }
+
+          ]
+        },
+        options: {
+          legend: {
+            display: false
+          },
+          scales: {
+            yAxes: [{
+              ticks: {
+                callback: function(label, index, labels) {
+                  return '11/' + '1' + label + '/17';
+                }
+              }
+            }]
+          }
+
+        }
+      });
+
+
+      new Chart(document.getElementById("monthly-chart"), {
+        type: 'line',
+        data: {
+          labels: [" 12:00 AM", " 12:10 AM", " 12:20 AM", " 12:30 AM", " 12:40 AM", " 12:50 AM", " 1:00 AM", " 1:10 AM", " 1:20 AM", " 1:30 AM", " 1:40 AM", " 1:50 AM", " 2:00 AM", " 2:10 AM", " 2:20 AM", " 2:30 AM", " 2:40 AM", " 2:50 AM",
+            " 3:00 AM", " 3:10 AM", " 3:20 AM", " 3:30 AM", " 3:40 AM", " 3:50 AM", " 4:00 AM", " 4:10 AM", " 4:20 AM", " 4:30 AM", " 4:40 AM", " 4:50 AM", " 5:00 AM", " 5:10 AM", " 5:20 AM", " 5:30 AM", " 5:40 AM", " 5:50 AM", " 6:00 AM",
+            " 6:10 AM", " 6:20 AM", " 6:30 AM", " 6:40 AM", " 6:50 AM", " 7:00 AM", " 7:10 AM", " 7:20 AM", " 7:30 AM", " 7:40 AM", " 7:50 AM", " 8:00 AM", " 8:10 AM", " 8:20 AM", " 8:30 AM", " 8:40 AM", " 8:50 AM", " 9:00 AM", " 9:10 AM",
+            " 9:20 AM", " 9:30 AM", " 9:40 AM", " 9:50 AM", " 10:00 AM", " 10:10 AM", " 10:20 AM", " 10:30 AM", " 10:40 AM", " 10:50 AM", " 11:00 AM", " 11:10 AM", " 11:20 AM", " 11:30 AM", " 11:40 AM", " 11:50 AM", " 12:00 PM", " 12:10 PM",
+            " 12:20 PM", " 12:30 PM", " 12:40 PM", " 12:50 PM", " 1:00 PM", " 1:10 PM", " 1:20 PM", " 1:30 PM", " 1:40 PM", " 1:50 PM", " 2:00 PM", " 2:10 PM", " 2:20 PM", " 2:30 PM", " 2:40 PM", " 2:50 PM", " 3:00 PM", " 3:10 PM", " 3:20 PM",
+            " 3:30 PM", " 3:40 PM", " 3:50 PM", " 4:00 PM", " 4:10 PM", " 4:20 PM", " 4:30 PM", " 4:40 PM", " 4:50 PM", " 5:00 PM", " 5:10 PM", " 5:20 PM", " 5:30 PM", " 5:40 PM", " 5:50 PM", " 6:00 PM", " 6:10 PM", " 6:20 PM", " 6:30 PM",
+            " 6:40 PM", " 6:50 PM", " 7:00 PM", " 7:10 PM", " 7:20 PM", " 7:30 PM", " 7:40 PM", " 7:50 PM", " 8:00 PM", " 8:10 PM", " 8:20 PM", " 8:30 PM", " 8:40 PM", " 8:50 PM", " 9:00 PM", " 9:10 PM", " 9:20 PM", " 9:30 PM", " 9:40 PM",
+            " 9:50 PM", " 10:00 PM", " 10:10 PM", " 10:20 PM", " 10:30 PM", " 10:40 PM", " 10:50 PM", " 11:00 PM", " 11:10 PM", " 11:20 PM", " 11:30 PM", " 11:40 PM", " 11:50 PM"
+          ],
+          datasets: [{
+              label: "10/22",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, 0, null, null, null, null, null, null, null, null, null, 0, null, 0, null, 0, null, null, null, null, 0, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 0, null, null, null, null, null, 0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 0, null, null, null, null, 0, null, 0, null, null, null
+              ]
+            },
+            {
+              label: "10/23",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, 1, null, null, null, null, 1, null, 1, null, 1, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, 1, null, 1, null, 1, null, null, null, null, null, null, null, null, null, 1, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, 1, null, null, null, null, null, null, null, null, 1, null, null, null, null, null, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "10/24",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, 2, null, null, null, null, null, null, null, null, null, 2, null, 2, null, 2, null, 2, null, null, 2, null, 2, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, 2, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 2, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 2, null, null, null, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "10/25",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, 3, null, null, null, null, null, null, null, null, 3, null, 3, null, 3, null, 3, null, null, 3, null, null, null, null, null, null, null, 3, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 3, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 3, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "10/26",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, 4, null, 4, null, 4, null, 4, null, 4, null, null, null, null, null, null, null, 4, null, null, null, null, 4, null, 4, null, 4, null, 4, null, 4, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 4, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, 4, null, 4, null, null, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "10/27",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, 5, null, 5, null, null, null, null, null, null, 5, null, 5, null, null, 5, null, 5, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, 5, null, null, null, null, null, null, null, null, null, null, null, 5, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 5, null, null, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "10/28",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, 6, null, null, null, null, null, null, null, null, null, null, 6, null, 6, null, 6, null, null, 6, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "10/29",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, 7, null, null, null, null, null, null, 7, null, null, null, null, 7, null, null, null, null, null, 7, null, null, null, null, null, null, null, null, null,
+                null, null, null, 7, null, null, null, null, 7, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 7, null, 7, null, null, null, null, 7, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 7, null, null, null, 7, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "10/30",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, 8, null, null, null, 8, null, null, null, null, null, null, null, null, null, null, null, null, 8, null, 8, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 8, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 8, null, null, null, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "10/31",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, 9, null, 9, null, null, null, null, null, null, null, null, 9, null, 9, null, 9, null, null, null, 9, null, null, 9, null, null, null, null, null, null, null, null,
+                9, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 9, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 9, null, null, null, null, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "11/01",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, 10, null, null, null, null, null, null, null, null, 10, null, null, 10, null, 10, null, null, null, null, null, 10, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 10, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "11/02",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, 11, null, null, 11, null, 11, null, null, null, 11, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, 11, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 11, null, null, null, null, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "11/03",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, 12, null, null, null, null, 12, null, 12, null, null, 12, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, 12, null, null, null, null, null, null, 12, null, 12, null, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "11/04",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, 13, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, 13, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "11/05",
+              borderColor: "#C0392B",
+              backgroundColor: "#C0392B",
+              backgroundColor: "#C0392B",
+              pointBackgroundColor: "#C0392B",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, 14, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+              ]
+            }, {
+              label: "11/05",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, 14, null, 14, null, null, null, 14, null, null, null, null, null, null, null, null, null, null, null, 14, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, 14, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                14, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 14, null, null, null, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "11/06",
+              borderColor: "#C0392B",
+              backgroundColor: "#C0392B",
+              backgroundColor: "#C0392B",
+              pointBackgroundColor: "#C0392B",
+              data: [null, null, null, null, null, null, 15, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 15, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "11/06",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null,
+                null, null, null, null, null, 15, null, 15, null, null, 15, null, null, null, 15, null, 15, null, 15, null, 15, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 15, null, null, null, null, null, null, null, null, null, null, null, 15, null,
+                15, null, null, null, null, null, null, null, null, null, null, 15, null, null, null, null, 15, null, 15, null, 15, null, 15, null, null, null, null, null
+              ]
+            },
+            {
+              label: "11/07",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, 16, null, null, null, null, null, null, null, null, null, null, null, 16, null, null, null, null, null, 16, null, 16, null, null, null, 16, null, 16, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, 16, null, null, null, null, null, null, null, null, null, null, null, 16, null, null, null, null, null, 16, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, 16, null, null, null, null, null, null, 16, null, null, null, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "11/08",
+              borderColor: "#C0392B",
+              backgroundColor: "#C0392B",
+              backgroundColor: "#C0392B",
+              pointBackgroundColor: "#C0392B",
+              data: [null, null, null, null, null, null, null, null, null, null, null, 17, null, 17, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "11/08",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null,
+                null, null, null, null, null, null, null, null, null, null, 17, null, null, null, null, null, null, 17, null, null, null, null, null, null, 17, null, 17, null, 17, null, 17, null, 17, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, 17, null, null, null, null, null, null, null, null, null, null, null, 17, null, null, null, null, null, null, 17, null, null, null, null, null, 17, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 17, null, null, null, null, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "11/09",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, 18, null, null, null, null, null, 18, null, null, null, null, null, 18, null, null, 18, null, null, 18, null, 18, null, null, null, 18, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, 18, null, null, null, null, null, null, null, null, null, null, null, 18, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, 18, null, 18, null, 18, null, null, null, null, null, null, null, 18, null, null, null, 18, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "11/10",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, 19, null, null, null, null, null, null, null, null, null, 19, null, 19, null, 19, null, null, 19, null, null, null, null, null, 19, null, null, null, null, null, null, 19, null, null, null,
+                null, null, null, null, null, null, null, 19, null, null, null, null, null, null, null, null, null, null, null, 19, null, null, null, null, null, 19, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 19, null, 19, null, 19, null, 19, null, 19, null, 19, null, null, null
+              ]
+            },
+            {
+              label: "11/11",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, 20, null, null, null, null, null, 20, null, 20, null, null, null, 20, null, 20, null, 20, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 20, null, 20, null, null, null, null, null, null, null, null, null, 20, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 20, null, null, null, null, null, 20, null, null, null, null, null
+              ]
+            },
+            {
+              label: "11/12",
+              borderColor: "#C0392B",
+              backgroundColor: "#C0392B",
+              backgroundColor: "#C0392B",
+              pointBackgroundColor: "#C0392B",
+              data: [21, null, 21, null, 21, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+              ]
+
+            },
+            {
+              label: "11/12",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null,
+                null, null, null, null, 21, null, 21, null, null, null, 21, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 21, null, null, null, null, null, null, 21, null, null, null, null,
+                21, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 21, null, null, null, 21, null, 21, null, 21, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, 21, null, null, null, null, null, null, null, null, null, null, 21, null, 21, null, 21, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "11/13",
+              borderColor: "#C0392B",
+              backgroundColor: "#C0392B",
+              backgroundColor: "#C0392B",
+              pointBackgroundColor: "#C0392B",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 22, null, null, null, null, null, null, 22, null, 22, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "11/13",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null,
+                null, null, null, null, null, 22, null, null, null, null, 22, null, null, null, null, 22, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, 22, null, null, null, null, null, 22, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 22, null, null, null, null,
+                null, null, 22, null, null, 22, null, 22, null, 22, null, null, 22, null, null, null, null, null, null, null, 22, null, null, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "11/14",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, 23, null, null, null, null, 23, null, 23, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 23, null, null, null, null, null, null, null, null, null, null, null, 23, null, null, null, null,
+                23, null, 23, null, null, null, null, null, null, null, null, null, null, 23, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "11/15",
+              borderColor: "#C0392B",
+              backgroundColor: "#C0392B",
+              backgroundColor: "#C0392B",
+              pointBackgroundColor: "#C0392B",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 24, null, 24, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 24, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "11/15",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                24,
+                null, null, null, null, null, 24, null, 24, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 24, null, null, null, null, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "11/16",
+              borderColor: "#C0392B",
+              backgroundColor: "#C0392B",
+              backgroundColor: "#C0392B",
+              pointBackgroundColor: "#C0392B",
+              data: [25, null, null, null, null, null, null, null, null, 25, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 25, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "11/16",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null,
+                null, null, null, 25, null, 25, null, null, null, null, null, null, null, null, null, null, 25, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 25, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                25, null, null, null, null, null, null, null, null, 25, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 25, null, null, null, null, 25
+              ]
+            },
+            {
+              label: "11/17",
+              borderColor: "#C0392B",
+              backgroundColor: "#C0392B",
+              backgroundColor: "#C0392B",
+              pointBackgroundColor: "#C0392B",
+              data: [null, null, null, null, null, null, null, 26, null, null, null, null, 26, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+              ]
+            },
+            {
+              label: "11/17",
+              borderColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              backgroundColor: "#5294C8",
+              pointBackgroundColor: "#5294C8",
+              data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, 26, null, null, null, null, null, null, null, null, 26, null, 26, null, 26, null, 26, null, null, null, null, null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 26, null, null, null, null, 26, null, null, null, null, null, null
+              ]
+            }
+          ]
+        },
+        options: {
+          legend: {
+            display: false
+          },
+          scales: {
+            yAxes: [{
+              ticks: {
+                max: 26,
+                stepSize: 7,
+                callback: function(label, index, labels) {
+                  if (label <= 9)
+                    return "10/" + (label + 22) + "/17";
+                  else
+                    return "11/" + (label - 9) + "/17";
+
+                }
+              }
+            }]
+          }
+        }
+      });
+
+      new Chart(document.getElementById("transferringoverview"), {
+        type: 'bar',
+        data: {
+          labels: ['12:00 AM', "12:30 AM", "1:00 AM", "1:30 AM", "2:00AM", "2:30 AM", "3:00 AM", "3:30 AM", '4:00 AM',
+            "4:30 AM", "5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", '8:00 AM', "8:30 AM", "9:00 AM", "9:30 AM",
+            "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", '12:00 PM', "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM",
+            "3:30 PM", '4:00 PM', "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", '8:00 PM', "8:30 PM", "9:00 PM",
+            "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM", '12:00 AM'
+          ],
+          datasets: [{
+            label: "Activity",
+            backgroundColor: "#4F8CB8",
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 440, 550, 800, 700, 650, 200, 100, 0, 0, 0, 100, 0, 300, 500, 400, 500, 800, 600, 550, 200, 10, 40, 50, 300, 200, 0, 0, 1, 1, 0]
+          }]
+        },
+        options: {
+          legend: {
+            display: false
+          }
+        }
+      });
+
+
+
+      new Chart(document.getElementById("sleeping1"), {
+        type: 'horizontalBar',
+        data: {
+          labels: ["Awake", "Light", "Deep", "REM"],
+          datasets: [{
+            backgroundColor: [
+              "#F8BBD0",
+              "#7FB3DB",
+              "#3e95cd",
+              "#1531AE"
+            ],
+            data: [11, 20, 50, 19]
+          }]
+        },
+        options: {
+          scales: {
+            yAxes: [{
+              barThickness: 40,
+              ticks: {
+                beginAtZero: true,
+              },
+              gridLines: {
+                display: false
+              }
+            }],
+            xAxes: [{
+              ticks: {
+                autoSkip: false,
+                maxRotation: 0,
+                minRotation: 0,
+                padding: 0
+              },
+              gridLines: {
+                display: false
+              }
+            }]
+          },
+          legend: {
+            display: false
+          }
+        }
+      });
+
+      new Chart(document.getElementById('sleeping2'), {
+        type: "bar",
+        data: {
+          labels: ["9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM", '12:00 AM', "12:30 AM", "1:00 AM", "1:30 AM", "2:00 AM",
+            "2:30 AM", "3:00 AM", "3:30 AM", '4:00 AM', "4:30 AM", "5:00 AM", "5:30AM", "6:00 AM", "6:30 AM",
+            "7:00 AM", "7:40 AM", '8:00 AM', "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM"
+          ],
+          datasets: [{
+            label: "active",
+            backgroundColor: "#F8BBD0",
+            borderColor: "#F8BBD0",
+            data: [0.3, 0.3, 0.3, 0.3, 0, 0, 0, 0, 0.3, 0.3, 0, 0, 0, 0.3, 0, 0, 0.3, 0, 0, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0.3],
+            xAxisID: "bar-x-axis1"
+
+          }, {
+            label: "asleep",
+            backgroundColor: "#3e95cd",
+            borderColor: "#3e95cd",
+            data: [.15, .15, .15, .15, .15, .15, .15, .15, .15, .15, .15, .15, .15, .15, .15, .15, .15, .15, .15, .15, .15, .15, .15, .15, .15, .15, .15, .15, .15, .15, .15, .15],
+            xAxisID: "bar-x-axis2"
+          }]
+        },
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                display: false,
+                beginAtZero: true
+              },
+              gridLines: {
+                display: false
+              }
+            }],
+            xAxes: [{
+              display: false,
+              id: 'bar-x-axis1',
+              barThickness: 5,
+              categoryPercentage: 1.0,
+              barPercentage: 1.0,
+              gridLines: {
+                display: false
+              }
+
+            }, {
+              id: "bar-x-axis2",
+              type: "category",
+              categoryPercentage: 1.0,
+              barPercentage: 1.0,
+              barThickness: 50,
+              gridLines: {
+                display: false
+              }
+            }]
+          }
+
+        }
+      });
+
+
+      new Chart(document.getElementById('sleeping3'), {
+        type: "bar",
+        data: {
+          labels: ["9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM", '12:00 AM', "12:30 AM", "1:00 AM", "1:30 AM", "2:00 AM",
+            "2:30 AM", "3:00 AM", "3:30 AM", '4:00 AM', "4:30 AM", "5:00 AM", "5:30AM", "6:00 AM", "6:30 AM",
+            "7:00 AM", "7:40 AM", '8:00 AM', "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM"
+          ],
+          datasets: [{
+            label: "active",
+            backgroundColor: "#F8BBD0",
+            data: [0.3, 0.3, 0.3, 0.3, 0, 0, 0, 0, 0.3, 0.3, 0, 0, 0, 0.3, 0, 0, 0.3, 0, 0, 0, 0, 0, 0.3, 0, 0, 0],
+            xAxisID: "bar-x-axis1"
+
+          }, {
+            label: "asleep",
+            backgroundColor: "#3e95cd",
+            data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+            xAxisID: "bar-x-axis2"
+          }]
+        },
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                display: false,
+                beginAtZero: true
+              },
+              gridLines: {
+                display: false
+              }
+            }],
+            xAxes: [{
+              display: false,
+              id: 'bar-x-axis1',
+              barThickness: 5,
+              categoryPercentage: 1.0,
+              barPercentage: 1.0,
+              gridLines: {
+                display: false
+              }
+
+            }, {
+              id: "bar-x-axis2",
+              type: "category",
+              categoryPercentage: 1.0,
+              barPercentage: 1.0,
+              barThickness: 50,
+              gridLines: {
+                display: false
+              }
+            }]
+          }
+
+        }
+      });
+
+      new Chart(document.getElementById("mov1"), {
+        type: 'doughnut',
+        data: {
+          labels: ["M", "T", "W", "T", "F"],
+          datasets: [{
+            backgroundColor: [
+              "#3498db",
+              "#95a5a6",
+              "#9b59b6",
+              "#f1c40f",
+              "#e74c3c"
+            ],
+            data: [12, 19, 3, 17, 28]
+          }]
+        },
+        options: {
+          legend: {
+            display: false
+          },
+          rotation: 1 * Math.PI,
+          circumference: 1 * Math.PI
+        }
+      });
+    </script>
+
+
+    <script>
+      function openBath(evt, monName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tab-links");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace("active", "");
+        }
+        document.getElementById(monName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+
+    <!-- NEW NEW NEW NEW NEW  NEW NEW NEW NEW NEW  NEW NEW NEW NEW NEW  NEW NEW NEW NEW NEW  NEW NEW NEW NEW NEW  NEW NEW NEW NEW NEW-->
+    <script>
+      $(document).ready(function() {
+        $("#save-remark").click(function() {
+          var remark = $("#notes").val();
+          $(".new").append(remark);
+        });
+      });
+    </script>
+    <!-- NEW NEW NEW NEW NEW  NEW NEW NEW NEW NEW  NEW NEW NEW NEW NEW  NEW NEW NEW NEW NEW  NEW NEW NEW NEW NEW  NEW NEW NEW NEW NEw-->
+
+
+
+
+  </body>
+
+</html>

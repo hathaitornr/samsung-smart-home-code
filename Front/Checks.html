@@ -1,0 +1,63 @@
+var values = JSON.parse(BATH, function (key, value) {
+    for (i=0; i<BATH.length; i++) {
+      if (key == i){
+        return value
+
+      }
+   
+    }});
+
+
+  var currentdate = new Date(); 
+    var datetime = currentdate.getDate() + "/"
+                + (currentdate.getMonth()+1)  + "/" 
+                + currentdate.getFullYear() + " "  
+                + currentdate.getHours() + ":"  
+                + currentdate.getMinutes() + ":" 
+                + currentdate.getSeconds();
+    console.log(datetime);
+    
+
+    current_time = currentdate.toLocaleString('en-US', { hour: 'numeric',minute:'numeric', hour12: true });
+    console.log(current_time)
+
+
+    var arr = snapshot.val();
+        var arr2 = Object.keys(arr);
+        var key = arr2[0];
+        console.log(key) // 
+
+
+        
+    var = hymns
+
+    dataRef.once("value", function(snapshot) {
+          var hymns = [];
+          snapshot.forEach(function(childSnapshot) {
+               //....    
+               var item = new Hymn(...);
+               // push each new item to array
+               hymns.push(item);  
+          });
+          // loop done, store data
+          localStorage.setItem("Hymns", JSON.stringify(hymns));
+          // return array
+          return hymns;    
+});
+  //   var events = [];
+  //   var databaseRef = database.ref("Devices/").orderByChild("DateTime");
+
+  //   databaseRef.on('child_added', function(snapshot) {
+  //   var event = snapshot.val(); 
+
+  //   // add the event to the UI
+  //   var elm = document.createElement('li');
+  //   elm.id = 'event-'+ snapshot.key;
+  //   elm.innerText = event.title;
+  //   document.querySelector('#event-list').appendChild(elm);
+
+  // // add the event to our list
+  //   events.push({
+  //       title: event.title, 
+  //       content: event.content
+  //   });
